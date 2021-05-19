@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/BaiTapQuanLyHocSinh/src/java/HocSinhCRUD.java</file>
             <file>file:/C:/Users/admin/Documents/NetBeansProjects/BaiTapQuanLyHocSinh/web/index.jsp</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/BaiTapQuanLyHocSinh/src/java/ServletHocSinh.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/BaiTapQuanLyHocSinh/web/index.html</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/BaiTapQuanLyHocSinh/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/BaiTapQuanLyHocSinh/src/java/HocSinh.java</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/BaiTapQuanLyHocSinh/src/java/HocSinhServlet.java</file>
         </group>
     </open-files>
 </project-private>
