@@ -19,7 +19,7 @@ public class Magazine extends Book {
         this.discount = discount;
     }
 
-    public Magazine(int discount, int id, String title, String status, String publisher, int price) {
+    public Magazine(int id, String title, int status, String publisher, int price, int discount) {
         super(id, title, status, publisher, price);
         this.discount = discount;
     }

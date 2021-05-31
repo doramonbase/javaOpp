@@ -21,7 +21,7 @@ public class ReferenceBook extends Book {
         this.discount = discount;
     }
 
-    public ReferenceBook(String author, int discount, int id, String title, String status, String publisher, int price) {
+    public ReferenceBook(int id, String title, int status, String publisher, int price, String author, int discount) {
         super(id, title, status, publisher, price);
         this.author = author;
         this.discount = discount;

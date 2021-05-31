@@ -12,7 +12,7 @@ package quanlysach;
 public class Book {
     private int id;
     private String title;
-    private String status;
+    private int status;
     private String publisher;
     private int price;
 
@@ -23,7 +23,7 @@ public class Book {
         this.id = id;
     }
 
-    public Book(int id, String title, String status, String publisher, int price) {
+    public Book(int id, String title, int status, String publisher, int price) {
         this.id = id;
         this.title = title;
         this.status = status;
