@@ -7,6 +7,8 @@ package JDBCConn;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.DriverManager;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author admin
@@ -23,6 +25,15 @@ public class ConnMysql {
     }
     
     public Connection getConn() throws SQLException {
-        return DriverManager.getConnection(url, userName, pw);
+        Connection connect = null;
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connect = DriverManager.getConnection(url, userName, pw);
+            System.out.println("Connect succesfully");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ConnMysql.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return connect;
     }
+    
 }

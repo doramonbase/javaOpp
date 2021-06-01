@@ -23,6 +23,17 @@ public class Textbook extends Book {
         super(id, title, status, publisher, price);
         this.author = author;
     }
+
+    @Override
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    @Override
+    public String getAuthor() {
+        return author;
+    }
+    
     
     
     

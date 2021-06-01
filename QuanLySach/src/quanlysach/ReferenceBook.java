@@ -26,6 +26,27 @@ public class ReferenceBook extends Book {
         this.author = author;
         this.discount = discount;
     }
+
+    @Override
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    @Override
+    public void setDiscount(int discount) {
+        this.discount = discount;
+    }
+
+    @Override
+    public String getAuthor() {
+        return author;
+    }
+
+    @Override
+    public int getDiscount() {
+        return discount;
+    }
+    
     
     
 }

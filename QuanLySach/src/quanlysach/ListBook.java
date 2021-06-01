@@ -16,7 +16,7 @@ import java.sql.*;
 public class ListBook {
     public List<Book> DisplayAllBooks() throws SQLException {
         List<Book> listBook = new ArrayList<>();
-        JDBCConn.ConnMysql dbconn = new JDBCConn.ConnMysql("jdbc:mysql://quan_ly_sach","root","");
+        JDBCConn.ConnMysql dbconn = new JDBCConn.ConnMysql("jdbc:mysql://localhost:3306/quan_ly_sach","root","");
         
         Connection conn = dbconn.getConn();
         Statement stmt = conn.createStatement();

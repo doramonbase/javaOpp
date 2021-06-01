@@ -15,7 +15,6 @@ import java.util.logging.Logger;
  * @author admin
  */
 public class QuanLySach {
-
     /**
      * @param args the command line arguments
      */
@@ -25,7 +24,9 @@ public class QuanLySach {
             
             List<Book> list = getList.DisplayAllBooks();
             
-            
+            list.forEach(books -> {
+                System.out.format("%10s%10s%10s%10s%10s%10s%10s%n",books.getId(),books.getTitle(),books.getStatus(),books.getPublisher(),books.getPrice(),books.getAuthor(),books.getDiscount());
+            });
         } catch (SQLException ex) {
             Logger.getLogger(QuanLySach.class.getName()).log(Level.SEVERE, null, ex);
         }

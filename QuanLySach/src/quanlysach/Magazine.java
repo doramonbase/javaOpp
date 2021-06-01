@@ -23,6 +23,16 @@ public class Magazine extends Book {
         super(id, title, status, publisher, price);
         this.discount = discount;
     }
+
+    @Override
+    public void setDiscount(int discount) {
+        this.discount = discount;
+    }
+
+    @Override
+    public int getDiscount() {
+        return discount;
+    }
     
     
 }
