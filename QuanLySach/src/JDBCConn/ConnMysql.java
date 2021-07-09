@@ -17,7 +17,7 @@ public class ConnMysql {
     private final String url;
     private final String userName;
     private final String pw;
-
+    Connection connect;
     public ConnMysql(String url, String userName, String pw) {
         this.url = url;
         this.userName = userName;
@@ -25,7 +25,6 @@ public class ConnMysql {
     }
     
     public Connection getConn() throws SQLException {
-        Connection connect = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connect = DriverManager.getConnection(url, userName, pw);
@@ -36,4 +35,9 @@ public class ConnMysql {
         return connect;
     }
     
+    public void disconnect() throws SQLException {
+        if (connect != null && !connect.isClosed()) {
+            connect.close();
+        }
+    }
 }

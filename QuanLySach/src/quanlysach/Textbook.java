@@ -19,8 +19,13 @@ public class Textbook extends Book {
         this.author = author;
     }
 
-    public Textbook(int id, String title, int status, String publisher, int price, String author) {
-        super(id, title, status, publisher, price);
+    public Textbook(int id, String title, int status, String publisher, int price, int type, String author) {
+        super(id, title, status, publisher, price, type);
+        this.author = author;
+    }
+
+    public Textbook(String title, int status, String publisher, int price, int type, String author) {
+        super(title, status, publisher, price, type);
         this.author = author;
     }
 

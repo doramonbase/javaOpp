@@ -21,12 +21,18 @@ public class ReferenceBook extends Book {
         this.discount = discount;
     }
 
-    public ReferenceBook(int id, String title, int status, String publisher, int price, String author, int discount) {
-        super(id, title, status, publisher, price);
+    public ReferenceBook(int id, String title, int status, String publisher, int price, int type, String author, int discount) {
+        super(id, title, status, publisher, price, type);
         this.author = author;
         this.discount = discount;
     }
 
+    public ReferenceBook(String title, int status, String publisher, int price, int type, String author, int discount) {
+        super(title, status, publisher, price, type);
+        this.author = author;
+        this.discount = discount;
+    }
+    
     @Override
     public void setAuthor(String author) {
         this.author = author;

@@ -15,6 +15,7 @@ public class Book {
     private int status;
     private String publisher;
     private int price;
+    private int type;
     private String author;
     private int discount;
 
@@ -25,43 +26,23 @@ public class Book {
         this.id = id;
     }
 
-    public Book(int id, String title, int status, String publisher, int price) {
+    public Book(int id, String title, int status, String publisher, int price, int type) {
         this.id = id;
         this.title = title;
         this.status = status;
         this.publisher = publisher;
         this.price = price;
+        this.type = type;
     }
 
-    public Book(int id, String title, int status, String publisher, int price, String author) {
-        this.id = id;
+    public Book(String title, int status, String publisher, int price, int type) {
         this.title = title;
         this.status = status;
         this.publisher = publisher;
         this.price = price;
-        this.author = author;
-    }
-
-    public Book(int id, String title, int status, String publisher, int price, int discount) {
-        this.id = id;
-        this.title = title;
-        this.status = status;
-        this.publisher = publisher;
-        this.price = price;
-        this.discount = discount;
-    }
-
-    public Book(int id, String title, int status, String publisher, int price, String author, int discount) {
-        this.id = id;
-        this.title = title;
-        this.status = status;
-        this.publisher = publisher;
-        this.price = price;
-        this.author = author;
-        this.discount = discount;
+        this.type = type;
     }
     
-
     public void setId(int id) {
         this.id = id;
     }
@@ -82,6 +63,10 @@ public class Book {
         this.title = title;
     }
 
+    public void setType(int type) {
+        this.type = type;
+    }
+    
     public void setAuthor(String author) {
         this.author = author;
     }
@@ -118,9 +103,11 @@ public class Book {
     public int getDiscount() {
         return discount;
     }
+
+    public int getType() {
+        return type;
+    }
     
-    
-    
-    
+   
     
 }
